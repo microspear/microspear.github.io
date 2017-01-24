@@ -1,52 +1,29 @@
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ site.name }} | {{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path og-image.jpg %}{% endif %}">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path og-image.jpg %}{% endif %}">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
+  <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
-    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="/vendor/device-mockups/device-mockups.min.css">
-
-    <!-- Custom CSS
-    <link rel="stylesheet" href="css/main.css" type="text/css"> -->
-    <link href="/css/main.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <!-- Google ADS mobile block -->
-    {% if site.google_ad_client %}
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "{{ site.google_ad_client }}",
-        enable_page_level_ads: true
-        });
-    </script>
-    {% endif %}
-
-    {% if site.addthis_id %}
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis_id }}"></script>
-      {% endif %}
-
+  {% if site.blog_theme == "light" %}
+    {% stylesheet light %}
+  {% else %}
+    {% stylesheet dark %}
+  {% endif %}
 </head>
