@@ -1,81 +1,46 @@
-![](_assets/images/documentation/chalk-intro@2x.png)
+#New Age Jekyll theme
+=========================
 
-Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
+## If you are a company and you're going to use the blog: 
+1. contact bootstrap start up and ask.
+2. contact me because there is to remove some useless part.
 
-## Overview
+Jekyll theme based on [New Age bootstrap theme ](https://startbootstrap.com/template-overviews/new-age/)
 
-Features:
-  - Dark and Light theme.
-  - Filter on tags.
-  - customizable pagination.
-  - Beautified link sharing in Facebook and other social media.
-  - Automatic time to read post indicator.
-  - Automatic RSS feed.
-  - About page.
-  - 404 page.
-  - SEO optimized.
-  - PageSpeed optimized.
-  - Cross browser support (supports all modern browsers).
-  - Media embed for videos.
-  - Enlarge images on click (like Medium).
+# Demo
+View this jekyll theme in action [here](https://jekynewage.github.io/)
 
-Integrations
-  - [Google Analytics](https://analytics.google.com/analytics/web/)
-  - [Google Fonts](https://fonts.google.com/)
-  - [Disqus](https://disqus.com/)
-  - [Ionicons](http://ionicons.com/)
-  - Social media links
+## Built by
+[Antonio Trento](https://it.linkedin.com/in/antoniotrento)
 
-Used tools
-  - [Autoprefixer](https://github.com/postcss/autoprefixer)
-  - [Bower](http://bower.io/)
-  - [Circle CI](https://circleci.com/)
-  - [Html-proofer](https://github.com/gjtorikian/html-proofer)
-  - [Jekyll](http://jekyllrb.com/)
-  - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
-  - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
-  - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
-  - [Kickster](http://kickster.nielsenramon.com/)
-  - [Retina.js](http://imulus.github.io/retinajs/)
-  - [STACSS](http://stacss.nielsenramon.com/)
+This Jekyll template was created to develop, landing pages, squeeze pages, portfolio and blog or all the above.
 
-## Usage
+###I integrated analytical tools and marketing such as:
+- Google Ad Words
+- Google analytics
+- Disqus comment system
+- Add This social sharing
 
-### Installation
+>>External stylesheets and libraries included are Google Fonts, Font Awesome, Normalize.CSS, and WOW.js
 
-If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](http://brew.sh/) installed):
+In order to set your log data to applications _config.yml just open the file and find the associated items.
 
-    brew install ruby
-    brew install npm
+I also built a system to add their own names on the same company files
 
-Next setup your environment:
+**To change the base colors yellow go in css folder there main.css where you can set the primary color and the secondary color, remember that the theme is gradient in the background areas**
 
-    bin/setup
 
-### Development
+If you are interested in implementing this theme please contact me without any problems I will do what is in my power to help you!
 
-Run Jekyll:
+If you have noticed anything unusual or errors in my development I ask you kindly let me know or send a pull request!
 
-    bundle exec jekyll serve
+Any opinion and critical comment is welcome! So give us inside!
 
-### Deploy to GitHub Pages
+We can get in touch by:
 
-Run this in the root project folder in your console:
+1. By <a href="https://twitter.com/lantoniotrento">twitter</a>
+2. mail <a href="mailto:lantoniotrento@gmail.com">lantoniotrento[at]gmail.com</a>
+3. Via <a href="https://it.linkedin.com/in/antoniotrento">LinkedIn</a>
 
-    bin/deploy
-
-You can find more info on how to use the gh-pages branch and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
-
-[View this](https://github.com/nielsenramon/kickster#automated-deployment-with-circle-ci) for more info about automated deployment with Circle CI.
-
-## License
-
-MIT License
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/chalk/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+=========
+For more details, read the [documentation](http://jekyllrb.com/)

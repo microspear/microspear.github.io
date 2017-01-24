@@ -1,66 +1,37 @@
-# Mandatory settings
+# Site settings
+title: Antonio Trento, theme Jeky New Age, the start Bootstrap themplate build for jekyll
+email:
+description: A jekyll template for landing pages, portfolio and blogging
 
-name: Chalk
-paginate: 25
-paginate_path: "/posts/page/:num/"
-url: # add site url http://example.com/
-blog_theme: light # Or use dark
+baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
+url: "https://jekynewage.github.io" # the base hostname & protocol for your site
 
-# Optional settings
+#Google Ad Words Data from scripts code (using Google responsive options) and ad client
+data-ad-slot: 2973388149
+data-ad-client: ca-pub-9204963049240271
+google_ad_client: ca-pub-9204963049240271
 
-discus_identifier: # Add your Disqus identifier
-ga_analytics: # Add your GA Tracking Id
-rss_enabled: true # Change to false if not
-about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
+google_analytics: "UA-86331249-1"
+addthis_id: ra-5644da281510c62f
+disqus_account: jeky-new-age
+
+# Social networks usernames (many more available: flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.) see all icon at fontawesome.io
 social:
-  dribbble: # Add your Dribbble handle
-  facebook: # Add your Facebook handle
-  flickr: # Add your Flickr handle
-  github: # Add your GitHub handle
-  linkedin: # Add your LinkedIn handle
-  twitter: # Add your Twitter handle
-  email: # Add your Email address
-  bitcoin: # Add your Bitcoin link or address
+  - title: twitter
+    url: https://twitter.com/lantoniotrento
+  - title: facebook
+    url: https://facebook.com/lantoniotrento
+  - title: google-plus
+    url: https://plus.google.com/+AntoniotrentoIt
+  #- title: github
+  #  url: http://github.com/jekyll
 
-# Important settings (change at own risk)
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-assets:
-  compress:
-    css: true
-    js: true
-  features:
-    automatic_img_size: false
-  sources:
-    - _assets/bower
-    - _assets/fonts
-    - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _vendor/
-collections:
-  my_tags:
-    output: true
-    permalink: /tag/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: articles_by_tag
-exclude:
-  - .bowerrc
-  - .travis.yml
-  - bin/*
-  - bower.json
-  - circle.yml
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - vendor/
-gems:
-  - jekyll-assets
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jemoji
-permalink: posts/:slug
+gems: [jekyll-paginate, jekyll-feed]
+# Build settings
