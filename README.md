@@ -1,37 +1,81 @@
-## Welcome to GitHub Pages
+![](_assets/images/documentation/chalk-intro@2x.png)
 
-You can use the [editor on GitHub](https://github.com/microspear/microspear.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Overview
 
-### Markdown
+Features:
+  - Dark and Light theme.
+  - Filter on tags.
+  - customizable pagination.
+  - Beautified link sharing in Facebook and other social media.
+  - Automatic time to read post indicator.
+  - Automatic RSS feed.
+  - About page.
+  - 404 page.
+  - SEO optimized.
+  - PageSpeed optimized.
+  - Cross browser support (supports all modern browsers).
+  - Media embed for videos.
+  - Enlarge images on click (like Medium).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Integrations
+  - [Google Analytics](https://analytics.google.com/analytics/web/)
+  - [Google Fonts](https://fonts.google.com/)
+  - [Disqus](https://disqus.com/)
+  - [Ionicons](http://ionicons.com/)
+  - Social media links
 
-```markdown
-Syntax highlighted code block
+Used tools
+  - [Autoprefixer](https://github.com/postcss/autoprefixer)
+  - [Bower](http://bower.io/)
+  - [Circle CI](https://circleci.com/)
+  - [Html-proofer](https://github.com/gjtorikian/html-proofer)
+  - [Jekyll](http://jekyllrb.com/)
+  - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
+  - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
+  - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
+  - [Kickster](http://kickster.nielsenramon.com/)
+  - [Retina.js](http://imulus.github.io/retinajs/)
+  - [STACSS](http://stacss.nielsenramon.com/)
 
-# Header 1
-## Header 2
-### Header 3
+## Usage
 
-- Bulleted
-- List
+### Installation
 
-1. Numbered
-2. List
+If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](http://brew.sh/) installed):
 
-**Bold** and _Italic_ and `Code` text
+    brew install ruby
+    brew install npm
 
-[Link](url) and ![Image](src)
-```
+Next setup your environment:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+    bin/setup
 
-### Jekyll Themes
+### Development
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/microspear/microspear.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Run Jekyll:
 
-### Support or Contact
+    bundle exec jekyll serve
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Deploy to GitHub Pages
+
+Run this in the root project folder in your console:
+
+    bin/deploy
+
+You can find more info on how to use the gh-pages branch and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
+
+[View this](https://github.com/nielsenramon/kickster#automated-deployment-with-circle-ci) for more info about automated deployment with Circle CI.
+
+## License
+
+MIT License
+
+## Contributing
+
+1. Fork it ( https://github.com/[my-github-username]/chalk/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
