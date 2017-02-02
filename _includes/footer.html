@@ -1,35 +1,18 @@
-<!-- Documents about icons are here: http://fontawesome.io/icons/ -->
-<div class="footer">
-  <hr />
-  <div class="footer-link">
-    {% if site.author.facebook %}
-    <a href="https://www.facebook.com/{{ site.author.facebook }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    {% endif %}
+<!-- Start Footer -->
+<footer class="main-footer">
+    <div class="container-fluid">
+        
+        <ul class="social">
+            {% if site.facebook %}<li><a href="{{ site.facebook }}"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>{% endif %}
+            {% if site.twitter %}<li><a href="{{ site.twitter }}"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>{% endif %}
+            {% if site.instagram %}<li><a href="{{ site.instagram }}"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a></li>{% endif %}
+            {% if site.youtube %}<li><a href="{{ site.youtube }}"><svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg></a></li>{% endif %}
+            {% if site.skype %}<li><a href="{{ site.skype }}"><svg class="icon icon-skype"><use xlink:href="#icon-skype"></use></svg></a></li>{% endif %}
+            {% if site.feed %}<li><a href="#"><svg class="icon icon-feed"><use xlink:href="#icon-feed"></use></svg></a></li>{% endif %}
+        </ul>
 
-    {% if site.author.twitter %}
-    <a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    {% endif %}
+        <small>{% if site.copyright %} {{ site.copyright }} {% endif %}</small>
 
-    {% if site.author.github %}
-    <a href="https://github.com/{{ site.author.github }}"><i class="fa fa-github" aria-hidden="true"></i></a>
-    {% endif %}
-
-    {% if site.author.linkedin %}
-    <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    {% endif %}
-
-    {% if site.author.medium %}
-    <a href="https://medium.com/@{{ site.author.medium }}"><i class="fa fa-medium" aria-hidden="true"></i></a>
-    {% endif %}
-
-    {% if site.author.tumblr %}
-    <a href="https://{{ site.author.tumblr }}.tumblr.com"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
-    {% endif %}
-
-    {% if site.author.email %}
-    <a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-    {% endif %}
-
-  </div>
-  © {{ site.copyright.year }} {{ site.copyright.name }}. All rights reserved.
-</div>
+    </div>
+</footer>
+<!-- End Footer -->
